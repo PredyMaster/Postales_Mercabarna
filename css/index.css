@@ -1,0 +1,411 @@
+@font-face {
+    font-family: 'AmsiProNarw-Bold';
+    src: url("../fonts/AmsiProNarw-Bold.woff2") format('woff2'),
+         url("../fonts/AmsiProNarw-Bold.woff") format('woff'),
+         url("../fonts/AmsiProNarw-Bold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'knockouthtf94-ultmtsumo';
+    src: url('../fonts/knockout-htf94-ultmtsumo-webfont.woff2') format('woff2'),
+         url('../fonts/knockout-htf94-ultmtsumo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+  padding: 0;
+  margin:0;
+  background-color: #E73F2C;
+  font-family: 'AmsiProNarw-Bold', Arial;
+}
+
+#Header{
+  height: 350px;
+  background-image: url("../img/Header_Back.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Footer{
+  height: 280px;
+  background-color: #007B36;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeaderLogo, .BonNadal {
+  width: 600px;
+  display: block;
+  margin: auto;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  display: block;
+}
+.TopeTexto{
+  max-width: 1000px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding: 50px 0;
+  text-align: left;
+}
+
+
+.TextIntro {
+  font-size: 20px;
+  text-align: center;
+  background: white;
+  color: #E73F2C;
+  padding: 100px 0;
+}
+
+.TextIntro p{
+  max-width: 1300px;
+  display: block;
+  margin: auto;
+  padding: 10px;
+}
+
+.TextTria {
+  font-family: 'knockouthtf94-ultmtsumo', Arial;
+  font-size: 40px;
+  color: white;
+  line-height: 35px;
+  -webkit-text-stroke: 2px black;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #007B36;
+  padding: 30px 0;
+  margin: 0;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+
+textarea#Desitjos {
+    width: 100%;
+    height: 180px;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+.SeccionVideo {
+    max-width: 1000px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 150px 0;
+}
+.SeccionVideo p{
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+.VideoMercabarna {
+  text-align: center;
+}
+.VideoContent {
+  position: relative;
+  padding-bottom: 56.25%; /*panorámico*/
+  padding-top: 25px;
+  height: 0;
+}
+.VideoContent iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.MargenInf {
+  margin-bottom: 30px!important;
+}
+#fileupload {
+    display: none;
+}
+.Start {
+    background: #007B36;
+    padding: 8px 16px;
+    color: white!important;
+    text-decoration: none!important;
+}
+.ExMargen {
+    margin: 100px auto;
+}
+
+#PostalTrans, #BackPostalTrans {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.MeteDatos {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 30px 30px;
+    background: white;
+    height: 300px;
+}
+.TitDatos {
+    width: 30%;
+    float: left;
+    font-size: 25px;
+    line-height: 28px;
+}
+.MeteTextos {
+    width: 70%;
+    float: right;
+}
+.MeteTextos input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    font-size: 20px;
+    line-height: 20px;
+}
+.BackTextOrigen {
+    position: absolute;
+    top: 58.5%; 
+    left: 55% ;
+    font-size: min(1.8vw,22px);
+      white-space: nowrap;
+}
+.BackTextDestino {
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    font-size: min(1.8vw,22px);
+      white-space: nowrap;
+}
+.BackTextMensaje {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: min(1.8vw,22px);
+    width: 40%;
+      max-height: 80%;
+}
+#idioma {
+    color: white;
+    font-size: 18px;
+    float: right;
+    margin: 5px;
+    display: none;
+}
+
+#idioma a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:hover .Tits, a:hover .Fons {
+  transform: scale(0.92);
+  transition: .3s ease;
+}
+
+
+
+
+.BorderRounds{
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+}
+#TitGalery, #TitFondo{
+  width: 100%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 50px 0;
+}
+.Tits, .Fons {
+  width: 250px;
+  display: inline-block;
+  background: black;
+  border: 1px solid black;
+  margin: 0 10px;
+}
+.TitImage, .FonsImage, .HeaderImg {
+    width: 100%;
+}
+.Fons{
+  margin-bottom: 30px;
+}
+
+
+#Postal{
+  display: block;
+  width: 99.9%;
+  height: auto;
+  padding-top: 56%;
+  margin: 10px auto 40px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid black;
+  background: url("../img/Fondos/02_Mercabarna/Imagen6.jpg");
+  background-size: cover;
+}
+#BackPostal{
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 56.25%;
+  margin: 10px auto 40px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid black;
+  background: url("../img/Fondos/Back_Postal.jpg");
+  background-size: contain;
+
+}
+.Fondo{
+       display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right:0;
+  bottom: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.Guia {
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+}
+.Titulo{
+  position: absolute;
+    top: 0;
+    right:0;
+  bottom: 0;
+    left: 0;
+  width: 100%;
+  z-index: 30;
+}
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto;
+  display: block!important;
+  width: 200px;
+}
+.TextoIntro1{
+  padding-bottom: 50px;
+}
+
+
+#navigation {
+  margin: 10px 0;
+}
+.btnMercaBarna {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    display: block;
+    padding: 8px 0;
+    text-align: center;
+    cursor: pointer;
+    width: 250px;
+    margin: 20px auto;
+    border: 2px solid black;
+    font-size: 17px;
+
+    border-radius: 17px 17px 17px 17px;
+    -moz-border-radius: 17px 17px 17px 17px;
+    -webkit-border-radius: 17px 17px 17px 17px;
+}
+
+.btnMercaBarna:link, .btnMercaBarna:visited, .btnMercaBarna:hover, .btnMercaBarna:active {
+  text-decoration: none;
+  color: black;
+}
+
+
+@media only screen and (max-width: 980px) {
+  #Header{
+    height: 180px;
+  }
+  .container {
+    width: 100%;
+    padding: 0!important;
+  }
+  .BonNadal{
+    width: 500px;
+  }
+  .HeaderLogo{
+    width: 350px;
+  }
+  .SeccionVideo, .TextIntro {
+    padding: 150px 62px;
+  }
+  #TitGalery, #TitFondo {
+    padding: 0;
+  }
+  #Footer {
+      height: 161px;
+  }
+  #idioma {
+      top: 10px;
+      right: 15px;
+      font-size: 18px;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+  #title,
+  #description {
+    display: none;
+  }
+
+  .Tits, .Fons {
+      width: 70%;
+      display: block;
+      margin: 20px auto;
+  }
+
+  .TextIntro {
+    font-size: 18px;
+  }
+
+  .TextTria {
+    font-size: 34px;
+    padding: 30px 10px;
+  }
+  .BonNadal {
+    width: 350px;
+  }
+
+  .TopeTexto {
+    padding: 0;
+}
+
+
+}
